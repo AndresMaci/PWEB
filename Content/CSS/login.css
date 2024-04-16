@@ -1,8 +1,9 @@
 ﻿body {
-    background-image: url('https://i.ibb.co/yptGHzt/434565628-17897903444976562-5637318453861493893-n.jpg');
+    background-image: url('../png/fondoLogin.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 
@@ -19,6 +20,9 @@
     border: 2px solid black;
     padding: 20px;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Color blanco con 70% de opacidad */
+    border-radius: 10px; /* Bordes redondeados para la tarjeta */
+    padding: 20px; /* Espaciado interno */
 }
 
 .input-group-text {
@@ -36,3 +40,5 @@
 .label-input-c {
     margin-right: 55%;
 }
+
+
