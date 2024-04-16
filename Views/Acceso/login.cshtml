@@ -1,36 +1,80 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="~/Content/CSS/login.css" rel="stylesheet" />
 </head>
-<body>
 
-    <div class="login-container">
-        <form action="@Url.Action("login","Acceso")" method="post">
-            <div class="form-group">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="num_identidad" required>
+<body>
+    <div id="login" class="container-sm">
+        <div class="row justify-content-center mt-5 mb-5">
+            <div id="campos_login" class="col-md-4">
+                <!-- Logo del login -->
+                <div class="text-center">
+
+                    <img src="~/Content/png/rueda libre.png" class="img-thumbnail">
+                    <br> <br> <br>
+                    <span style="font-family: Arial; font-size: 19px;">Accede</span>
+                    <br><br>
+                </div>
+
+                <!-- Formulario de inicio de sesión -->
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <label class="label-input-u">Usuario:</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                      style="background-image: url(https://cdn-icons-png.flaticon.com/128/4227/4227236.png);"></span>
+                            </div>
+                            <input id="Usuario" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <label class="label-input-c">Contraseña:</label>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                      style=" background-image: url(https://cdn-icons-png.flaticon.com/128/2549/2549910.png);"></span>
+                            </div>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a style="font-family: Arial; font-size: 14px;" href="https://www.ejemplo.com">
+                                ¿Olvidaste la
+                                contraseña?
+                            </a>
+                        </div>
+                        <br><br>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                        </div>
+                        <br><br>
+                        <div class="d-flex justify-content-center">
+                            <p style="font-family: Arial; font-size: 14px;">¿No tienes una Cuenta?</p>
+                            <a style="font-family: Arial; font-size: 14px;"
+                               href="https://www.ejemplo.com">Registrate</a>
+                        </div>
+
+                </form>
             </div>
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="pass_usser" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Iniciar Sesión</button>
-            </div>
-        </form>
-        <div class="register-link">
-            ¿No tienes una cuenta? <a href="@Url.Action("Registro","Acceso")">Regístrate aquí</a>.
         </div>
     </div>
 
+
 </body>
+
 </html>

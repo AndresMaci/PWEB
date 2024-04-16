@@ -1,46 +1,38 @@
 ﻿body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background-image: url('https://i.ibb.co/yptGHzt/434565628-17897903444976562-5637318453861493893-n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.login-container {
-    background-color: #fff;
+
+.login-form button {
+    width: 100%;
+}
+
+.img-thumbnail {
+    max-width: 70%;
+    border-radius: 50px;
+}
+
+#campos_login {
+    border: 2px solid black;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.input-group-text {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
 }
 
-    .form-group label {
-        display: block;
-        margin-bottom: 5px;
-    }
+.label-input-u {
+    margin-right: 60%;
+}
 
-    .form-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    .form-group button {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background-color: #007bff;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
+.label-input-c {
+    margin-right: 55%;
+}
